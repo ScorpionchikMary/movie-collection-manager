@@ -7,7 +7,8 @@ class Movie:
         self.director = director
         self.genre = genre
         self.rating = rating
-
+    def __str__(self):
+        return f"{self.title} ({self.year}), реж. {self.director}, {self.genre}, {self.rating}"
 class MovieCollectionIterator(Iterator[Movie]):
     def __init__(self, movies: list[Movie]):
         self._movies = movies
