@@ -1,5 +1,5 @@
 from typing import Dict, List, Optional
-from .models import Movie, MovieCollectionIterator
+from models import Movie, MovieCollectionIterator
 
 class MovieCollection:
     def __init__(self) -> None:
